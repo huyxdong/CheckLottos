@@ -5,28 +5,6 @@ from bs4 import BeautifulSoup
 import requests
 
 
-__doc__ = '''
-- Viết một script kiểm tra xem các số argument đầu vào có trúng lô không
-(2 số cuối trùng với một giải nào đó). Nếu không có argument nào thì print
-ra tất cả các giải từ đặc biệt -> giải 7.
-
-Lấy kết quả từ ``ketqua.net``.
-
-Dạng của câu lệnh::
-
-  ketqua.py [NUMBER1] [NUMBER2] [...]
-
-Các thư viện:
-
-- requests
-- beautifulsoup4 [tuỳ chọn]
-- argparse hay sys.argv
-
-Gợi ý:
-
-- ``nargs`` https://docs.python.org/2/library/argparse.html
-'''
-
 def get_result():
 	'''Get all prizes of ketqua.net'''
 	respond = requests.get('http://ketqua.net')
